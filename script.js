@@ -24,7 +24,7 @@ function updateValues() {
     if (outflowDisplay) outflowDisplay.innerText = `${expense}`;
 }
 
-// 4. Add Transaction (For add.html)
+// 
 if (transactionForm) {
     transactionForm.addEventListener('submit', (e) => {
         e.preventDefault();
