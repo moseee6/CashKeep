@@ -3,7 +3,7 @@
 // 1. Initialize Data Node (Fetch from LocalStorage or start empty)
 let transactions = JSON.parse(localStorage.getItem('vault_data')) || [];
 
-// 2. DOM Elements
+// 
 const balanceDisplay = document.getElementById('sum');
 const inflowDisplay = document.getElementById('in');
 const outflowDisplay = document.getElementById('out');
