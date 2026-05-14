@@ -1,6 +1,6 @@
 /* --- CASHKEEP CORE ENGINE --- */
 
-// 1. Initialize Data Node (Fetch from LocalStorage or start empty)
+// 
 let transactions = JSON.parse(localStorage.getItem('vault_data')) || [];
 
 // 
