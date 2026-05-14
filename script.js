@@ -46,11 +46,11 @@ if (transactionForm) {
         transactions.push(newTransaction);
         updateLocalStorage();
         alert("VAULT AUTHORIZED: Entry Recorded.");
-        window.location.href = 'index.html'; // Redirect to dashboard
+        window.location.href = 'index.html'; 
     });
 }
 
-// 5. Build Audit History (For history.html)
+// 
 function renderHistory() {
     if (!transactionList) return;
 
@@ -81,7 +81,7 @@ function renderHistory() {
     });
 }
 
-// 6. Security Functions
+// 
 function removeTransaction(id) {
     if (confirm("Permanently delete this record?")) {
         transactions = transactions.filter(t => t.id !== id);
@@ -98,7 +98,7 @@ function clearVault() {
     }
 }
 
-// 7. System Sync
+// 
 function updateLocalStorage() {
     localStorage.setItem('vault_data', JSON.stringify(transactions));
 }
