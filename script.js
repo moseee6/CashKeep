@@ -11,7 +11,7 @@ const transactionForm = document.getElementById('transactionForm');
 const transactionList = document.getElementById('transactionList');
 const emptyMessage = document.getElementById('emptyMessage');
 
-// 3. Update Liquidity Metrics
+// 
 function updateValues() {
     const amounts = transactions.map(t => t.type === 'income' ? Number(t.amount) : -Number(t.amount));
     
