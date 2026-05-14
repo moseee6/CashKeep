@@ -69,7 +69,7 @@ body::before {
 
 .nav-links {
     display: flex;             /* THIS PUTS TITLES ACROSS THE PAGE */
-    gap: 40px;                           /* Space between links */
+    gap: 40px;                    /* Space between links */
 }
 
 .nav-links a {
