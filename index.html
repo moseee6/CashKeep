@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CashKee Moses</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .sync-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 15px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 50px;
+            color: #6366f1;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .pulse {
+            width: 8px;
+            height: 8px;
+            background: #6366f1;
+            border-radius: 50%;
+            animation: pulse-animation 2s infinite;
+        }
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0px rgba(99, 102, 241, 0.7); }
+            100% { box-shadow: 0 0 0 10px rgba(99, 102, 241, 0); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="brand-area">
+                <a href="index.html" class="nav-logo">CashKeep<span>.</span></a>
+                <p style="font-size: 10px; color: #94a3b8; letter-spacing: 1px; margin-top: -5px;">SECURE YOUR FUTURE</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html" class="active">Home Dashboard</a>
+                <a href="add.html">Add Money</a>
+                <a href="history.html">Audit History</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-wrapper">
+        
+        <header class="header-intro" style="margin-top: 80px; margin-bottom: 50px;">
+            <div class="sync-indicator">
+                <div class="pulse"></div>
+                VAULT NODE CONNECTED
+            </div>
+            <p style="color: #94a3b8; font-weight: 700; letter-spacing: 2px; font-size: 12px; text-transform: uppercase;">Total Available Liquidity</p>
+            
+            <h1 id="sum" style="font-size: 64px; font-weight: 900; color: #fff; margin-top: 10px;">
+                Ksh 0.00
+            </h1>
+        </header>
+
+        <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 60px;">
+            
+            <div class="lively-card" style="border-top: 4px solid #10b981;">
+                <p style="color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Inflow Metrics</p>
+                <h3 style="color: #10b981; font-size: 32px; margin-top: 15px; font-weight: 800;">
+                    + Ksh <span id="in">0.00</span>
+                </h3>
+            </div>
+
+            <div class="lively-card" style="border-top: 4px solid #ef4444;">
+                <p style="color: #94a3b8; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">Outflow Metrics</p>
+                <h3 style="color: #ef4444; font-size: 32px; margin-top: 15px; font-weight: 800;">
+                    - Ksh <span id="out">0.00</span>
+                </h3>
+            </div>
+
+        </section>
+
+        <section class="lively-card" style="margin-bottom: 80px; padding: 40px;">
+            <h4 style="color: #fff; margin-bottom: 20px;">System Integrity Report</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div>
+                    <h5 style="color: #6366f1; margin-bottom: 10px; font-size: 13px;">Publishing Check</h5>
+                    <p style="color: #475569; font-size: 13px; line-height: 1.8;">
+                        If these metrics are zero, ensure you are running this project via 
+                        <strong>Live Server</strong> or a published <strong>GitHub Pages</strong> URL. 
+                        Browsers block data sharing on local <code>file://</code> paths.
+                    </p>
+                </div>
+                <div>
+                    <h5 style="color: #10b981; margin-bottom: 10px; font-size: 13px;">Data Persistence</h5>
+                    <p style="color: #475569; font-size: 13px; line-height: 1.8;">
+                        Your vault data is bound to this specific browser's storage node. 
+                        Clearing your cache will reset all authorized transactions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="background: #05070a; padding: 100px 0; border-top: 1px solid #111827;">
+        <div class="main-wrapper" style="text-align: center;">
+            <h3 class="nav-logo">CashKeep<span>.</span></h3>
+            <p style="color: #1e293b; font-size: 11px; margin-top: 20px; letter-spacing: 3px;">
+                ENGINEERED BY MOSES EMONDE &copy; 2026
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
