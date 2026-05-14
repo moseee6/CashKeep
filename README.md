@@ -1,6 +1,11 @@
-# 🏦 CashKeep: Cosmic Vault Edition
-**CashKeep** is a high-performance, minimalist financial tracking application made to help users track their expenditure on a daily basis
+#  CashKeep
+ CashKeep is a high-performance, minimalist financial tracking application made to help users track their expenditure on a daily basis
+
+The application streamlines liquidity management by replacing cluttered traditional banking interfaces with a high-performance, "Cosmic" UI for faster transaction authorization and auditing.
+
+Its primary purpose is to provide a secure environment for users to be able to trcak and monitor their money and how it is spent. For more information kindly contcat me on whatsapp. 0733428661
 Live site link
+
 https://moseee6.github.io/CashKeep/
 ---
 
