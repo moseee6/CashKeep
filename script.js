@@ -1,4 +1,4 @@
-/* --- CASHKEEP CORE ENGINE --- */
+/*  */
 
 // 
 let transactions = JSON.parse(localStorage.getItem('vault_data')) || [];
