@@ -3,8 +3,11 @@
 
 The application streamlines liquidity management by replacing cluttered traditional banking interfaces with a high-performance, "Cosmic" UI for faster transaction authorization and auditing.
 
-Its primary purpose is to provide a secure environment for users to be able to trcak and monitor their money and how it is spent. For more information kindly contcat me on whatsapp. 0733428661
+Its primary purpose is to provide a secure environment for users to be able to trcak and monitor their money and how it is spent. For more information kindly contcat me on whatsapp. 
+0733428661
+
 Live site link
+
 
 https://moseee6.github.io/CashKeep/
 ---
